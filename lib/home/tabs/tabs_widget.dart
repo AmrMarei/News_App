@@ -35,6 +35,9 @@ class _TabsWidgetState extends State<TabsWidget> {
                           selectedIndex == widget.sourcesList.indexOf(source),
                       source: source))
                   .toList()),
+          SizedBox(
+            height: 10,
+          ),
           Expanded(child: NewsWidget(source: widget.sourcesList[selectedIndex]))
         ],
       ),
