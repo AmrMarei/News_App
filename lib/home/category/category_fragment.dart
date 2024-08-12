@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:new_app/home/category/category_item.dart';
 
 import '../../model/category.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class CategoryFragment extends StatelessWidget {
   var categoriesList = Category.getCategories();
@@ -20,7 +21,7 @@ class CategoryFragment extends StatelessWidget {
             height: 20,
           ),
           Text(
-            'Pick your category \n of interest',
+            AppLocalizations.of(context)!.pickYourCategoryOfInterest,
             style: Theme.of(context).textTheme.titleMedium,
           ),
           SizedBox(

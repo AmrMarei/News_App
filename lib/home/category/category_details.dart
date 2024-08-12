@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:new_app/model/category.dart';
 
 import '../../api/api_manager.dart';
@@ -30,12 +31,12 @@ class _CategoryDetailsState extends State<CategoryDetails> {
           } else if (snapshot.hasError) {
             return Column(
               children: [
-                Text('Something went Wrong'),
+                Text(AppLocalizations.of(context)!.somethingWentWrong),
                 ElevatedButton(
                     onPressed: () {
                       ApiManager.getSources(widget.category.id);
                     },
-                    child: Text('Try Again'))
+                    child: Text(AppLocalizations.of(context)!.tryAgain))
               ],
             );
           }
@@ -48,7 +49,7 @@ class _CategoryDetailsState extends State<CategoryDetails> {
                       ApiManager.getSources(widget.category.id);
                       setState(() {});
                     },
-                    child: Text('Try Again'))
+                    child: Text(AppLocalizations.of(context)!.tryAgain))
               ],
             );
           }

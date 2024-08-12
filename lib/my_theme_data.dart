@@ -14,6 +14,9 @@ class MyThemeData {
         ),
       ),
     ),
+    bottomSheetTheme: BottomSheetThemeData(
+      backgroundColor: AppColors.primaryLightColor,
+    ),
     textTheme: TextTheme(
       titleLarge: TextStyle(
         fontSize: 22,

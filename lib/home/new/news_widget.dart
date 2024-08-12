@@ -4,6 +4,7 @@ import 'package:new_app/home/new/news_item.dart';
 import 'package:new_app/model/SourceResponse.dart';
 
 import '../../app_colors.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class NewsWidget extends StatefulWidget {
   Source source;
@@ -29,12 +30,12 @@ class _NewsWidgetState extends State<NewsWidget> {
           } else if (snapshot.hasError) {
             return Column(
               children: [
-                Text('Something went Wrong'),
+                Text(AppLocalizations.of(context)!.somethingWentWrong),
                 ElevatedButton(
                     onPressed: () {
                       ApiManager.getNewsBySourceId(widget.source.id ?? '');
                     },
-                    child: Text('Try Again'))
+                    child: Text(AppLocalizations.of(context)!.tryAgain))
               ],
             );
           }
@@ -47,7 +48,7 @@ class _NewsWidgetState extends State<NewsWidget> {
                       ApiManager.getNewsBySourceId(widget.source.id ?? '');
                       setState(() {});
                     },
-                    child: Text('Try Again'))
+                    child: Text(AppLocalizations.of(context)!.tryAgain))
               ],
             );
           }

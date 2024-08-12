@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:new_app/app_colors.dart';
 import 'package:new_app/home/setting/settings.dart';
 import 'package:new_app/model/category.dart';
@@ -33,9 +34,9 @@ class _HomeScreenState extends State<HomeScreen> {
           appBar: AppBar(
             title: Text(
               selectedMenuItem == HomeDrawer.settings
-                  ? 'Setting'
+                  ? AppLocalizations.of(context)!.settings
                   : selectedCategory == null
-                      ? 'News App'
+                      ? AppLocalizations.of(context)!.newsApp
                       : selectedCategory!.title,
               style: Theme.of(context).textTheme.titleLarge,
             ),

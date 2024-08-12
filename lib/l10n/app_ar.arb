@@ -1,0 +1,18 @@
+{
+  "somethingWentWrong" : "حدث خطأ ما",
+  "tryAgain" : "حاول مرة أخرى",
+  "pickYourCategoryOfInterest" : "اختر الفئة التي تهمك",
+  "sports" : "الرياضة",
+  "health" : "الصحة",
+  "business" : "الأعمال",
+  "environment" : "البيئة",
+  "science" : "العلم",
+  "politics" : "السياسة",
+  "newsAppExclamation " : "تطبيق الأخبار",
+  "categories" : "الفئات",
+  "settings" : "الإعدادات",
+  "newsApp" : "تطبيق الأخبار",
+  "language" : "اللغه",
+    "arabic" : "العربيه",
+    "english" : "الانجليزيه"
+}

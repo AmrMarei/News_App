@@ -1,0 +1,18 @@
+{
+  "somethingWentWrong" : "Something went Wrong",
+  "tryAgain" : "Try Again",
+  "pickYourCategoryOfInterest" : "Pick your category \n of interest",
+  "sports" : "Sports",
+  "health" : "Health",
+  "business" : "Business",
+  "environment" : "Environment",
+  "science" : "Science",
+  "politics" : "Politics",
+  "newsAppExclamation" : "News App !",
+  "categories" : "Categories",
+  "settings" : "Settings",
+  "newsApp" : "News App",
+  "language" : "Language",
+  "arabic" : "Arabic",
+  "english" : "English"
+}
