@@ -7,7 +7,6 @@ import '../../app_colors.dart';
 
 class NewsItem extends StatelessWidget {
   News news;
-
   NewsItem({required this.news});
 
   @override
